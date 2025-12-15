@@ -1,136 +1,87 @@
-# Electrosurgical Unit (ESU) Safety Simulation
+# Electrosurgical Unit Safety Simulation
 
-## Project Overview
-This project is a **desktop simulation of an Electrosurgical Unit (ESU)** designed to evaluate **patient safety and device operation parameters** before activation.  
-The simulation is implemented using **Python and PyQt5** and follows internationally recognized **medical device safety standards**.
+This project is a simple desktop simulation for an **Electrosurgical Unit (ESU)**.  
+The purpose of the program is to check if the device settings are safe before use, based on basic medical safety rules.
 
-The system analyzes patient data and device settings, then provides:
+The application was created for an academic assignment about **medical device standards**.
+
+---
+
+## What is an ESU?
+An Electrosurgical Unit is a medical device used during surgeries to:
+- Cut tissue (Cut mode)
+- Control bleeding (Coag mode)
+
+Because ESUs use electrical energy, wrong settings can cause burns or tissue damage.  
+This simulation helps detect unsafe conditions before activation.
+
+---
+
+## What the Program Does
+The user enters:
+- Patient age and weight
+- ESU mode (Cut / Coag)
+- Power level
+- Activation time
+- Tissue impedance
+- Return pad contact condition
+- REM (Return Electrode Monitoring) status
+
+After pressing **START**, the system shows:
 - **SAFE**
 - **WARNING**
 - **ERROR**
 
-status outputs based on predefined safety limits.
+Warnings and errors are displayed on the screen.
 
 ---
 
-## Medical Device Explanation
-An **Electrosurgical Unit (ESU)** is a medical device used in surgical procedures to cut tissue or control bleeding using high-frequency electrical energy.
-
-### Key Risks Addressed:
-- Excessive power delivery
-- Long activation time (thermal injury)
-- Poor return electrode (pad) contact
-- High tissue impedance
-- Pediatric patient sensitivity
-
-This simulation focuses on **risk detection and mitigation**, not treatment.
+## User Interface Steps
+1. Run the program to open the main window  
+2. Enter patient information  
+3. Enter device settings  
+4. Press **START** to evaluate safety  
+5. Press **RESET** to clear inputs and test again  
 
 ---
 
-## Features
-- Manual input of patient and device parameters
-- Pediatric vs adult safety adjustment
-- Real-time safety evaluation
-- Visual alerts (flashing WARNING / ERROR)
-- Reset function for repeated testing
-- Return Electrode Monitoring (REM) logic
+## Standard Used
+The safety logic in this project is based on:
+
+**IEC 60601-2-2**  
+(Medical electrical equipment – safety requirements for electrosurgical devices)
+
+This standard focuses on:
+- Power limits
+- Patient safety
+- Thermal injury prevention
+- Return electrode monitoring
 
 ---
 
-##  User Interface (UI) Steps
-
-> **Note:** Insert screenshots of each step when submitting the report.
-
-### Step 1: Launch the Application
-Run the Python file to open the ESU Safety Evaluation interface.
-
----
-
-### Step 2: Enter Patient Information
-- **Age (years)**
-- **Weight (kg)**
-
-These values determine whether pediatric safety limits apply.
+## Safety Limits Used (Examples)
+- Cut mode max power: 120 W  
+- Coag mode max power: 90 W  
+- Pediatric patients: power reduced  
+- Long activation time: warning or error  
+- High impedance: warning or error  
+- Poor pad contact with REM: error  
 
 ---
 
-### Step 3: Enter Device Parameters
-- **Mode**: Cut / Coag
-- **Power (W)**
-- **Activation Time (sec)**
-- **Impedance (Ohms)**
-- **Return Pad Contact**: Good / Marginal / Poor
-- **REM Enabled** (checkbox)
+## Limitations
+- This is only a software simulation
+- No real electrical energy is used
+- Not a certified medical device
+- For educational use only
 
 ---
 
-### Step 4: Press START
-The system evaluates all parameters and displays:
-- **SAFE** (green)
-- **WARNING** (orange flashing)
-- **ERROR** (red flashing)
-
-Detailed alerts appear in the **System Alerts** panel.
-
----
-
-### Step 5: Press RESET
-Resets all fields and clears alerts for a new evaluation cycle.
-
----
-
-## Evaluation Logic Summary
-The system checks:
-- Power vs recommended and maximum limits
-- Activation time duration
-- Tissue impedance
-- Return electrode contact quality
-- REM status
-- Pediatric safety reduction factors
-
----
-
-##  Medical Standard Used
-
-### **IEC 60601-2-2**
-**Medical electrical equipment – Part 2-2:  
-Particular requirements for the basic safety and essential performance of high-frequency surgical equipment**
-
----
-
-## Applied Safety Limits (Examples)
-
-| Parameter | Adult Limit | Pediatric Adjustment |
-|--------|-------------|---------------------|
-| Cut Power | ≤ 120 W | Reduced by 30% |
-| Coag Power | ≤ 90 W | Reduced by 30% |
-| Activation Time | ≤ 20 sec | Same |
-| Impedance | ≤ 300 Ω | Same |
-| Poor Pad Contact | WARNING / ERROR | ERROR if REM active |
-
----
-
-## Standard Limitations
-- This is a **software simulation**, not a certified medical device
-- Does **not replace clinical judgment**
-- No real electrical output or tissue interaction
-- Intended for **educational and academic use only**
-
----
-
-## Technologies Used
-- Python 3
+## Tools Used
+- Python
 - PyQt5
-- Object-oriented design
-- Event-driven GUI logic
 
 ---
 
-##  GitHub Repository
-👉 **GitHub Link:**  
+## GitHub Link
 https://github.com/Kareemerfan03/ElectroSurgicalUnit_Simulation
-
----
-
-## 📄 Disclaimer
-This project is developed **for academic purposes only** and is **not intended for clinical or commercial use**.
