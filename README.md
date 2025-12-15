@@ -1,6 +1,6 @@
 # Electrosurgical Unit (ESU) Safety Simulation
 
-## 📌 Project Overview
+## Project Overview
 This project is a **desktop simulation of an Electrosurgical Unit (ESU)** designed to evaluate **patient safety and device operation parameters** before activation.  
 The simulation is implemented using **Python and PyQt5** and follows internationally recognized **medical device safety standards**.
 
@@ -13,7 +13,7 @@ status outputs based on predefined safety limits.
 
 ---
 
-## 🏥 Medical Device Explanation
+## Medical Device Explanation
 An **Electrosurgical Unit (ESU)** is a medical device used in surgical procedures to cut tissue or control bleeding using high-frequency electrical energy.
 
 ### Key Risks Addressed:
@@ -27,7 +27,7 @@ This simulation focuses on **risk detection and mitigation**, not treatment.
 
 ---
 
-## ⚙️ Features
+## Features
 - Manual input of patient and device parameters
 - Pediatric vs adult safety adjustment
 - Real-time safety evaluation
@@ -37,9 +37,9 @@ This simulation focuses on **risk detection and mitigation**, not treatment.
 
 ---
 
-## 🖥️ User Interface (UI) Steps
+##  User Interface (UI) Steps
 
-> 📸 **Note:** Insert screenshots of each step when submitting the report.
+> **Note:** Insert screenshots of each step when submitting the report.
 
 ### Step 1: Launch the Application
 Run the Python file to open the ESU Safety Evaluation interface.
@@ -79,7 +79,7 @@ Resets all fields and clears alerts for a new evaluation cycle.
 
 ---
 
-## 🚨 Evaluation Logic Summary
+## Evaluation Logic Summary
 The system checks:
 - Power vs recommended and maximum limits
 - Activation time duration
@@ -90,7 +90,7 @@ The system checks:
 
 ---
 
-## 📐 Medical Standard Used
+##  Medical Standard Used
 
 ### **IEC 60601-2-2**
 **Medical electrical equipment – Part 2-2:  
@@ -98,7 +98,7 @@ Particular requirements for the basic safety and essential performance of high-f
 
 ---
 
-## 🔒 Applied Safety Limits (Examples)
+## Applied Safety Limits (Examples)
 
 | Parameter | Adult Limit | Pediatric Adjustment |
 |--------|-------------|---------------------|
@@ -110,7 +110,7 @@ Particular requirements for the basic safety and essential performance of high-f
 
 ---
 
-## ⚠️ Standard Limitations
+## Standard Limitations
 - This is a **software simulation**, not a certified medical device
 - Does **not replace clinical judgment**
 - No real electrical output or tissue interaction
@@ -118,7 +118,7 @@ Particular requirements for the basic safety and essential performance of high-f
 
 ---
 
-## 🧑‍💻 Technologies Used
+## Technologies Used
 - Python 3
 - PyQt5
 - Object-oriented design
@@ -126,7 +126,7 @@ Particular requirements for the basic safety and essential performance of high-f
 
 ---
 
-## 🔗 GitHub Repository
+##  GitHub Repository
 👉 **GitHub Link:**  
 https://github.com/Kareemerfan03/ElectroSurgicalUnit_Simulation
 
